@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#imgSelect {
+    width: min-content;
+    margin: 10px 10px;
+    background-color: rgba(55, 52, 52, 0.24);
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#imgSelect:focus {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body {
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* keeps image in place while scrolling */
+    background-attachment: fixed; 
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.224);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+}
+
+footer label {
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 1%;
+}
+
+main {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.audioButton {
+    background-color: rgba(255, 255, 255, 0.906);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+}
+
+.audioControls {
+    width: 75%;
+    height: 20px;
+    margin: 0 10px;
+}
