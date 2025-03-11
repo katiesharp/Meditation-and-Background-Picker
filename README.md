@@ -46,5 +46,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Created by Katie Sharp. Feel free to reach out via [GitHub](https://katiesharp.github.io/Meditation-and-Background-Picker/).
+Created by Katie Sharp. Feel free to reach out via email at knssharp@gmail.com
 
