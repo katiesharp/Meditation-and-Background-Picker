@@ -1,4 +1,4 @@
-# Meditation Website
+# [Meditation Website](https://katiesharp.github.io/Meditation-and-Background-Picker/)
 
 A calming meditation website that allows users to change backgrounds and listen to guided meditation audio.
 
