@@ -10,6 +10,10 @@ metaTag.name = 'theme-color';
 metaTag.content = "rgb(47, 116, 73)";
 document.head.appendChild(metaTag);
 
+function isMobile() {
+    return window.matchMedia("(max-width: 768px)").matches;
+}
+
 function changeImg() {
     let value = document.querySelector('#imgSelect').value;
 
@@ -23,7 +27,11 @@ function changeImg() {
     }
     else if(value === 'garden')
     {
-        document.querySelector('body').style.backgroundImage = "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/pondBack.jpeg?v=1740538294647')";
+        let gardenImg = isMobile() 
+            ? "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/pondBack.jpeg?v=1740538294647')"
+            : "url('https://cdn.glitch.global/2d994763-2e9a-4920-a122-f628295bb048/Japanese_Garden_-1.jpg?v=1741725577596')";
+        document.querySelector('body').style.backgroundImage = gardenImg;
+        
         document.querySelector('footer').style.backgroundColor = "rgba(18, 57, 33, 0.7)";
         
         metaTag.content = "rgb(18, 57, 33)";
@@ -31,7 +39,10 @@ function changeImg() {
     }
     else if(value === 'winter')
     {
-        document.querySelector('body').style.backgroundImage = "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/winterBackImg.jpeg?v=1740538997653')";
+      let winterImg = isMobile() 
+            ? "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/winterBackImg.jpeg?v=1740538997653')"
+            : "url('https://cdn.glitch.global/2d994763-2e9a-4920-a122-f628295bb048/winter_forest_snow_snowfall.jpg?v=1741726101537')";
+        document.querySelector('body').style.backgroundImage = winterImg;
         document.querySelector('footer').style.backgroundColor = "rgba(39, 61, 126, 0.7)";
       
         metaTag.content = "rgb(39, 61, 126)";
@@ -39,7 +50,11 @@ function changeImg() {
     }
     else if(value === 'beach')
     {
-        document.querySelector('body').style.backgroundImage = "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/beachBackImg.jpg?v=1740538774966')";
+        let beachImg = isMobile() 
+            ? "url('https://cdn.glitch.global/be6fec13-836a-4245-8a5b-09d9d06303cf/beachBackImg.jpg?v=1740538774966')"
+            : "url('https://cdn.glitch.global/2d994763-2e9a-4920-a122-f628295bb048/beachdesktop?v=1741725801549')";
+  
+        document.querySelector('body').style.backgroundImage = beachImg;
         document.querySelector('footer').style.backgroundColor = "rgba(184, 130, 70, 0.63)";
         
         metaTag.content = "rgb(184, 130, 70)";
